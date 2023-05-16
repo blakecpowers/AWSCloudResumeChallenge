@@ -2,6 +2,9 @@
 
 In the Cloud Resume Challenge, we'll be learning how to use AWS (Amazon Web Services) to create a cloud-based resume website. This challenge is designed to help you gain hands-on experience with a variety of AWS services, including S3, CloudFront, Route 53, and Lambda.
 
+## Cloud Certification
+While it's recommended that you earn your [cloud certification](https://www.credly.com/badges/abad52e4-0f79-4d2b-bc1b-d873fcb4ac2b?source=linked_in_profile) before starting this challenge, it's not a requirement. The Cloud Resume Challenge is designed to be a practical and hands-on learning experience that can help you develop valuable skills in AWS services and cloud computing. Whether you're an aspiring cloud professional or an experienced developer looking to expand your knowledge, this challenge is a great way expand your skillset.
+
 ## Project Overview
 
 The goal of the Cloud Resume Challenge is to build a dynamic and scalable resume website that can be easily deployed to the cloud. This website will be built using a combination of AWS services, including:
