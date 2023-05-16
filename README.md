@@ -1,30 +1,26 @@
-# AWS Services for Cloud Service Technologies
+# [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
 
-If you're interested in gaining hands-on experience with cloud service technologies, AWS (Amazon Web Services) is a great option to explore. Follow the steps below to set up an AWS account and start working with their services.
+In the Cloud Resume Challenge, we'll be learning how to use AWS (Amazon Web Services) to create a cloud-based resume website. This challenge is designed to help you gain hands-on experience with a variety of AWS services, including S3, CloudFront, Route 53, and Lambda.
 
-## Account Setup
+## Project Overview
 
-To get started, you'll need to set up a secure AWS account. Follow these steps:
+The goal of the Cloud Resume Challenge is to build a dynamic and scalable resume website that can be easily deployed to the cloud. This website will be built using a combination of AWS services, including:
 
-1. **Setup an AWS Account:** Go to the AWS website and create an account. You will need to provide personal information and payment details.
-![Setup](/images/setup.png)
+- **S3**: A simple storage service that allows you to store and retrieve files.
+- **CloudFront**: A content delivery network that improves website speed and performance.
+- **Route 53**: A scalable and highly available domain name system (DNS) service.
+- **Lambda**: A serverless compute service that allows you to run code in response to events.
 
-2. **Setup MFA for the Root Account:** Multi-factor authentication (MFA) adds an extra layer of security to your account. To enable MFA for the root account, follow these steps:
-   - Go to IAM (Identity and Access Management)
-   - Click on Users, and find the user for the root account
-   - Navigate to Security Credentials, and assign an MFA device.
-   ![MFA](/images/security.png)
+Using these services, you'll create a website that is fast, reliable, and easy to manage. You'll also learn about AWS security and best practices for cloud-based website hosting.
 
-3. **Create an IAM User:** To avoid using the root account for regular usage, create an IAM (Identity and Access Management) user. Follow these steps:
-   - Create the IAM user
-   - Once created, you will have an access key and secret access key which can be used for programmatic access.
+## Getting Started
 
-4. **Optional: Install AWS Vault:** AWS Vault is a tool that allows you to securely store and use your IAM user credentials. To install AWS Vault:
-   - Open your terminal and run "aws vault add my-user"
-   - Provide the credentials from the IAM user
-   - Now you can run "aws-vault exec my-user -- aws s3 ls" (assuming the AWS CLI is installed on your machine).
-   - This will give a "permissions denied" error, since we haven't given our IAM user any permissions yet.
-   - We need to give Amazon S3 Full Access to our IAM user, create a simple S3 bucket, and run the command again. This time, the error will no longer be thrown.
+To get started with the Cloud Resume Challenge, you'll need to create an AWS account (if you don't already have one). Once you've set up your account, you can start building your resume website using the AWS services listed above.
 
-![permissions](/images/permissions.png)
-![s3](/images/s3permissions.png)
+Throughout the challenge, you'll have the opportunity to learn about different AWS services and how they can be used to create cloud-based applications. You'll also have access to a community of developers who are working on the same challenge, so you can ask questions, share ideas, and get feedback on your work.
+
+## Conclusion
+
+The Cloud Resume Challenge is a great way to gain hands-on experience with AWS services and improve your skills as a developer. Whether you're new to AWS or you're an experienced developer, this challenge will give you the opportunity to learn new skills and build something that you can be proud of.
+
+So what are you
