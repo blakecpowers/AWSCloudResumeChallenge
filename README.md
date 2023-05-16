@@ -7,6 +7,7 @@ If you're interested in gaining hands-on experience with cloud service technolog
 To get started, you'll need to set up a secure AWS account. Follow these steps:
 
 1. **Setup an AWS Account:** Go to the AWS website and create an account. You will need to provide personal information and payment details.
+![Setup](/images/setup.png)
 
 2. **Setup MFA for the Root Account:** Multi-factor authentication (MFA) adds an extra layer of security to your account. To enable MFA for the root account, follow these steps:
    - Go to IAM (Identity and Access Management)
