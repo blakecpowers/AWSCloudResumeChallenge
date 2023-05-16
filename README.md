@@ -13,6 +13,7 @@ To get started, you'll need to set up a secure AWS account. Follow these steps:
    - Go to IAM (Identity and Access Management)
    - Click on Users, and find the user for the root account
    - Navigate to Security Credentials, and assign an MFA device.
+   ![MFA](/images/security.png)
 
 3. **Create an IAM User:** To avoid using the root account for regular usage, create an IAM (Identity and Access Management) user. Follow these steps:
    - Create the IAM user
@@ -24,3 +25,6 @@ To get started, you'll need to set up a secure AWS account. Follow these steps:
    - Now you can run "aws-vault exec my-user -- aws s3 ls" (assuming the AWS CLI is installed on your machine).
    - This will give a "permissions denied" error, since we haven't given our IAM user any permissions yet.
    - We need to give Amazon S3 Full Access to our IAM user, create a simple S3 bucket, and run the command again. This time, the error will no longer be thrown.
+
+![permissions](/images/permissions.png)
+![s3](/images/s3permissions.png)
