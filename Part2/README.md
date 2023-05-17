@@ -3,12 +3,14 @@
 In this lesson, we will be using AWS SAM (Serverless Application Model) to create an S3 bucket for storing our static website. 
 
 ## Contents
-1. Installing the SAM CLI
-2. Initializing SAM
-3. Deploying SAM
-4. Modifying the Template.yaml to Create an S3 Bucket
-5. Defining "Infrastructure as Code"
-6. Checking Our S3 Buckets
+1. [Installing the SAM CLI](#installing-the-sam-cli)
+2. [Initializing SAM](#initializing-sam)
+3. [Deploying SAM](#deploying-sam)
+4. [Cloudformation in AWS](#cloudformation-in-aws)
+5. [Modifying the Template.yaml to Create an S3 Bucket](#modifying-the-templateyaml-to-create-an-s3-bucket)
+6. [Checking Our S3 Buckets](#checking-our-s3-buckets)
+6. [Defining "Infrastructure as Code"](#defining-infrastructure-as-code)
+7. [Conclusion](#conclusion)
 
 ## Installing the SAM CLI
 To use the SAM CLI, we must first install it. We can do this by running `sam init` and providing a project name, runtime to use, etc.

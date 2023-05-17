@@ -1,3 +1,13 @@
+# AWS Account Setup
+
+In this lesson, we will be setting up an AWS Account to implement this cloud resume project
+
+## Contents
+1. [AWS Services for Cloud Service Technologies](#aws-services)
+2. [Account Setup](#account-setup)
+3. [Conclusion](#conclusion)
+
+
 # AWS Services for Cloud Service Technologies
 If you're interested in gaining hands-on experience with cloud service technologies, AWS (Amazon Web Services) is a great option to explore. Follow the steps below to set up an AWS account and start working with their services.
 
@@ -27,3 +37,6 @@ To get started, you'll need to set up a secure AWS account. Follow these steps:
 
 ![permissions](/images/permissions.png)
 ![s3](/images/s3permissions.png)
+
+## Conclusion
+With these steps, you should now have an AWS account set up and be ready to start exploring AWS services. Remember to always be cautious with your credentials and keep security in mind when using any cloud service. Happy exploring! 
