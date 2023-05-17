@@ -26,6 +26,7 @@ aws vault exec my-user --no-session -- sam deploy --guided
 ![deploySAM](/images/deploySAM.png)
 
 Our file structure now looks like this: (containing default configs)
+
 ![fileStruc](/images/fileStructure.png)
 
 ## Cloudformation in AWS
@@ -45,6 +46,7 @@ All of these resources were deployed by SAM and were all defined in our template
 Since we are deploying a static site using S3, we will modify the Resources in `template.yaml` to accept a new resource named "MyWebsite" with type "s3". We can run `sam build` again to compile down the template and deploy it using `aws-vault`.
 
 Add resources to the template
+
 ![addResource](/images/newResource.png)
 
 Deploy the new template with added resource
