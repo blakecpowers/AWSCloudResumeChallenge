@@ -16,7 +16,16 @@ The first step is to create some HTML/CSS that represents your portfolio website
 ## Deploy with SAM
 We'll add to the template file we created in Part2 to allow us to read the index.html file in our bucket name.
 
-![template3deploy](/images/templatePart3Deploy.png)
+```
+Resources:
+  MyWebsite:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      WebsiteConfiguration:
+        IndexDocument: index.html
+      BucketName: my-fantastic-website
+```
 
 Then we want to deploy this change. We now have a public read on the access control and the website configuration with the index.html file.
 
