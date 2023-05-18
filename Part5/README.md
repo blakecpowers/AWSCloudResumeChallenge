@@ -53,7 +53,7 @@ Now after seeing what it does, lets actually deploy it. <br>
 make deploy-infra
 ```
 
-![r53p5](/images/r53p5.png)
+![r53p5](/images/r53P5.png)
 
 Now, when we make a request to `website.cmcloudlab515.info`, this should re-direct to the `d34yeshyar60z.Cloudfront.net`
 
