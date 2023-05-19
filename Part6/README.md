@@ -4,8 +4,64 @@ In this lesson, we will be configuring the API for our resume project. Since we'
 
 ## Contents
 1. [CORS](#cors)
-2. [API Gateway](#api-gateway)
-3. [Conclusion](#conclusion)
+2. [Development](#development)
+3. [API Gateway](#api-gateway)
+4. [Conclusion](#conclusion)
+
+## Development
+Before we jump into this lesson, there's a couple things I want to outline in development.
+
+```
+sam local start-api
+```
+
+The command `sam local start-api` is used to start a local API Gateway server that emulates the behavior of AWS API Gateway locally on your development machine. It is part of the AWS Serverless Application Model (SAM) CLI, which allows you to develop and test serverless applications locally before deploying them to AWS.
+
+When you run `sam local start-api`, it reads your SAM template (`template.yaml` or `template.yml` file) to determine the configuration of your API endpoints and their associated Lambda functions. It then starts a local HTTP server that listens for incoming requests on the specified port (default is 3000) and routes those requests to the corresponding Lambda functions.
+
+This command is useful during development and testing stages, as it allows you to iterate quickly without the need to deploy your application to AWS. It provides a local environment for testing your API endpoints and their integration with Lambda functions, enabling you to debug and troubleshoot your code before deploying it to the cloud.
+
+Now if we navigate to our local endpoint `http://localhost:3000/hello` this will invoke the lambda function.
+
+The lambda function is setup in our template.yaml here:
+
+```
+...
+Events:
+    HelloWorld:
+        Type: AWS::Serverless::Function
+        Properties:
+            Path: /hello
+            Method: get
+```
+
+Which is a configuration for an event named "HelloWorld" in an AWS Serverless Application Model (SAM) template. It defines a serverless function that will be triggered by an HTTP GET request to the /hello path.
+
+Here is a breakdown of the configuration:
+
+`Events:`: This section specifies the events that trigger the serverless function.
+`HelloWorld:`: This is the logical name or identifier for the event. It can be any unique name you choose.
+`Type: AWS::Serverless::Function:` Specifies the type of event, which is an AWS Serverless Function.
+`Properties:`: Denotes the properties associated with the serverless function.
+`Path: /hello:` Specifies the URL path that triggers the function. In this case, it is set to /hello.
+`Method: get:` Specifies the HTTP method that triggers the function. In this case, it is set to GET.
+So, when an HTTP GET request is made to the /hello path, the serverless function defined in this configuration will be executed. The actual implementation of the function's logic would be provided elsewhere in the SAM template or in the referenced code file.
+<br>
+
+And the following in our template.yaml
+
+```
+...
+    FirstFunction:
+        Type: AWS::Serverless::Function
+        Properties:
+            CodeUri: hello_world/
+            ...
+```
+
+Where this configures a serverless function named "FirstFunction" in an AWS Serverless Application Model (SAM) template. It specifies the code location for the function as the "hello_world/" directory.
+
+
 
 ## API Gateway
 It was explained a little in the Intro but I want to be clear. The API Gateway has already been setup with SAM and we can navigate to API Gateway right now to find this API.
@@ -23,6 +79,8 @@ We can navigate to Stages and then Prod. Where we already have a GET method for 
 If we clicked on the URL right now we would see this error, telling us that we need to configure CORS. 
 
 ![corserrorp6](/images/corserrorp6.png)
+
+
 
 ## CORS
 CORS (Cross-Origin Resource Sharing) is a browser security feature that allows web applications on different domains to safely interact with each other. It ensures that only trusted domains can access resources (such as data or assets) from other domains, protecting user privacy and preventing unauthorized access.
