@@ -3,9 +3,10 @@
 In this lesson, we will be applying DNS and Route53 to use a custom domain name.
 
 ## Contents
-1. [Cloudfront Distribution](#cloudfront-distribution)
-2. [Cloudfront Invalidations](#cloudfront-invalidations)
-3. [Conclusion](#conclusion)
+1. [Apply DNS with Route 53 Record](#apply-dns-with-route-53-record)
+2. [Create Certificate using ACM](#create-certificate-using-acm)
+3. [Attaching a Cloudfront Custom Domain](#attaching-a-cloudfront-custom-domain)
+4. [Conclusion](#conclusion)
 
 ## Apply DNS with Route 53 Record
 To add DNS, we will add the following to our Template.yaml file:
@@ -121,8 +122,43 @@ This is attaching a viewer certificate which is associated with the certificate 
 
 Next we will add an alias for our cloudformation.
 
+## Attaching a Cloudfront Custom Domain
+As of right now, we set up ACM and attached it to our Cloudfront Distribution, but we get a 403 error at the moment because we haven't allowed our custom domain access to the Cloudfront Distribution. 
+
+Ultimately, this is what we're after. Addint the Alternate Domain Names (CNAMEs) to the Cloudfront Distribution. We can also see the SSL which is what we created and attached above.
+
+![cfsidresult](/images/cfsidresult.png)
+
+In order to achieve this, we need to add the following to the template.yaml file:
+
+```
+Aliases:
+  - website.cmcloudlab1035.info
+```
+
+This adds an aliases property to the custom domain name. This Alias will be placed in the MyDistribution/Properties section. Example:
+
+```
+# MyDistribution:
+  # Properties:
+    ViewerCertificate: 
+      AcmCertificateArn: !Ref MyCertificate
+      SslSupportedMethod: sni-only
+    Aliases:
+    - website.cmcloudlab1035.info
+```
+
+We then deploy just like normal using our makefile
+
+```
+make deploy-infra
+```
+
+And we can now navigate to that alias `website.cmcloudlab1035.info` , see that the connection is secure, and the corresponding certificate information. This is secure and serving content from our Cloudfront Distribution. 
 
 
 ## Conclusion
+In this section, DNS and Route53 are implemented to enable the use of a custom domain name. The Template.yaml file is updated to include a Route 53 record set that maps the domain name `website.cmcloudlab515.info` to a CloudFront distribution using an alias. This ensures seamless routing and allows the website to be accessed through the specified domain name.
 
+By integrating DNS and Route53, the custom domain name `website.cmcloudlab515.info` is properly connected to the CloudFront distribution, enabling users to access the website using the desired domain. This improves the user experience and provides a professional and branded online presence.
 
