@@ -1,6 +1,7 @@
 # CORS with AWS Lambda and API Gateway
 
 In this lesson, we will be configuring the API for our resume project. Since we're using AWS SAM, SAM actually provides some API structure set up for us already in the Amazon API Gateway.
+I'm also providing the template.yaml and go code necessary to add the lambda function.
 
 ## Contents
 1. [Development](#development)
