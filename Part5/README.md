@@ -127,7 +127,7 @@ As of right now, we set up ACM and attached it to our Cloudfront Distribution, b
 
 Ultimately, this is what we're after. Addint the Alternate Domain Names (CNAMEs) to the Cloudfront Distribution. We can also see the SSL which is what we created and attached above.
 
-![cfsidresult](/images/cfsidresult.png)
+![cfdisresult](/images/cfdisresult.png)
 
 In order to achieve this, we need to add the following to the template.yaml file:
 
