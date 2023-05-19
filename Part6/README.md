@@ -59,7 +59,7 @@ And the following in our template.yaml
             ...
 ```
 
-Where this configures a serverless function named "FirstFunction" in an AWS Serverless Application Model (SAM) template. It specifies the code location for the function as the "hello_world/" directory.
+Where this configures a serverless function named "FirstFunction" in an AWS Serverless Application Model (SAM) template. It specifies the code location for the function as the "hello_world/" directory. This is where we have our go code that defines the aws lambda function.
 
 
 
