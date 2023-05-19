@@ -39,12 +39,12 @@ Which is a configuration for an event named "HelloWorld" in an AWS Serverless Ap
 
 Here is a breakdown of the configuration:
 
-`Events:`: This section specifies the events that trigger the serverless function.
-`HelloWorld:`: This is the logical name or identifier for the event. It can be any unique name you choose.
-`Type: AWS::Serverless::Function:` Specifies the type of event, which is an AWS Serverless Function.
-`Properties:`: Denotes the properties associated with the serverless function.
-`Path: /hello:` Specifies the URL path that triggers the function. In this case, it is set to /hello.
-`Method: get:` Specifies the HTTP method that triggers the function. In this case, it is set to GET.
+`Events:`: This section specifies the events that trigger the serverless function. <br>
+`HelloWorld:`: This is the logical name or identifier for the event. It can be any unique name you choose. <br>
+`Type: AWS::Serverless::Function:` Specifies the type of event, which is an AWS Serverless Function. <br>
+`Properties:`: Denotes the properties associated with the serverless function. <br>
+`Path: /hello:` Specifies the URL path that triggers the function. In this case, it is set to /hello. <br>
+`Method: get:` Specifies the HTTP method that triggers the function. In this case, it is set to GET. <br>
 So, when an HTTP GET request is made to the /hello path, the serverless function defined in this configuration will be executed. The actual implementation of the function's logic would be provided elsewhere in the SAM template or in the referenced code file.
 <br>
 
