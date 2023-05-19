@@ -3,8 +3,8 @@
 In this lesson, we will be configuring the API for our resume project. Since we're using AWS SAM, SAM actually provides some API structure set up for us already in the Amazon API Gateway.
 
 ## Contents
-1. [CORS](#cors)
-2. [Development](#development)
+1. [Development](#development)
+2. [CORS](#cors)
 3. [API Gateway](#api-gateway)
 4. [Conclusion](#conclusion)
 
