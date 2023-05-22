@@ -47,7 +47,7 @@ We can navigate to the events on this stack to see the create (for dynamoDB) is 
 
 Next we can navigate to DynamoDB in AWS and see the table that was created
 
-![dynammodbtable](/images/dynammodbtable.png)
+![dynamodbtable](/images/dynamodbtable.png)
 
 
 
