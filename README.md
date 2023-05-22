@@ -14,16 +14,14 @@ The goal of the Cloud Resume Challenge is to build a dynamic and scalable resume
 - **Route 53**: A scalable and highly available domain name system (DNS) service.
 - **Lambda**: A serverless compute service that allows you to run code in response to events.
 
-Using these services, you'll create a website that is fast, reliable, and easy to manage. You'll also learn about AWS security and best practices for cloud-based website hosting.
+Using these services, you'll get hands on experience with some of the most widely used AWS Services. You'll also learn about AWS security and best practices for cloud-based website hosting.
 
 ## Getting Started
 
-To get started with the Cloud Resume Challenge, you'll need to create an AWS account (if you don't already have one). Once you've set up your account, you can start building your resume website using the AWS services listed above.
+To get started with the Cloud Resume Challenge, checkout the README on part1. Follow each part/lesson and you'll be on your way to learning these AWS Services, no matter your experience level.
 
-Throughout the challenge, you'll have the opportunity to learn about different AWS services and how they can be used to create cloud-based applications. You'll also have access to a community of developers who are working on the same challenge, so you can ask questions, share ideas, and get feedback on your work.
+Throughout the challenge, you'll have the opportunity to learn about different AWS services and how they can be used to create cloud-based applications. This repo can act as a guide through your process.
 
 ## Conclusion
 
 The Cloud Resume Challenge is a great way to gain hands-on experience with AWS services and improve your skills as a developer. Whether you're new to AWS or you're an experienced developer, this challenge will give you the opportunity to learn new skills and build something that you can be proud of.
-
-So what are you
