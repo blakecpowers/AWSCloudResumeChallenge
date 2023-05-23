@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        fetch(' https://7t530003nh.execute-api.us-east-1.amazonaws.com/Prod/put')
+            .then(() => fetch(' https://7t530003nh.execute-api.us-east-1.amazonaws.com/Prod/get'))
+            .then(response => response.json())
+            .then((data) => {
+                document.getElementById('replaceme').innerText = data.count
+            })
+    </script>
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <p> Deployed! </p>
+    <p>
+        Visitors:
+        <span id="replaceme" />
+    </p>
+</body>
+
+</html>
