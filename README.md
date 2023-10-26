@@ -1,6 +1,9 @@
 # [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
 
-<img width="359" alt="awsphoto2" src="https://github.com/blakecpowers/AWSCloudResumeChallenge/assets/22222231/31395fd7-3116-4af8-8991-bcb7037c9ed2">
+<div style="text-align: center;">
+  <img width="359" alt="awsphoto2" src="https://github.com/blakecpowers/AWSCloudResumeChallenge/assets/22222231/31395fd7-3116-4af8-8991-bcb7037c9ed2">
+</div>
+
 
 
 In the Cloud Resume Challenge, you'll be learning how to use AWS (Amazon Web Services) to create a cloud-based resume website. This challenge is designed to help you gain hands-on experience with a variety of AWS services, including S3, CloudFront, Route 53, and Lambda.
