@@ -1,8 +1,6 @@
 # [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
 
-![awsphoto3](https://github.com/blakecpowers/AWSCloudResumeChallenge/assets/22222231/35c15d00-d813-44f7-9a9c-01ced0f7ce7d)
-
-
+![FinalDiagram](https://github.com/user-attachments/assets/e6efbcf2-c9de-4bab-988a-1a98b8a72b8c)
 
 
 
